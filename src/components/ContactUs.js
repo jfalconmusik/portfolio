@@ -19,7 +19,7 @@ export default class ContactUs extends Component {
               }}
             >
               <a
-                href="https://drive.google.com/uc?export=download&id=1SoMO9nlJVTkgDNyj3b5cIGFzFAtSY44j"
+                href="https://drive.google.com/uc?export=download&id=1wb1kTuejC_b_UUYYvqIe7J4ww-iILc46"
                 download
               >
                 Download Resume

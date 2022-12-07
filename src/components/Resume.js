@@ -32,34 +32,6 @@ export default class Resume extends Component {
               })}
           </div>
         </div>
-        <div className="row work">
-          <div className="three columns header-col">
-            <h1>
-              <span>Work</span>
-            </h1>
-          </div>
-
-          <div className="nine columns main-col">
-            {resumeData.work &&
-              resumeData.work.map((item) => {
-                return (
-                  <div className="row item">
-                    <div className="twelve columns">
-                      <h3>{item.CompanyName}</h3>
-                      <p className="info">
-                        {item.specialization}
-                        <span>&bull;</span>{" "}
-                        <em className="date">
-                          {item.MonthOfLeaving} {item.YearOfLeaving}
-                        </em>
-                      </p>
-                      <p>{item.Achievements}</p>
-                    </div>
-                  </div>
-                );
-              })}
-          </div>
-        </div>
 
         <div
           className="row skill"
@@ -131,48 +103,6 @@ export default class Resume extends Component {
                       src="https://nodejs.org/static/images/logo-hexagon-card.png"
                     />
                   </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>Parse</em>
-                    <img
-                      width="150px"
-                      height="auto"
-                      src="https://avatars3.githubusercontent.com/u/26932219?v=4"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>Heroku</em>
-                    <img
-                      width="140px"
-                      height="auto"
-                      src="https://weibeld.net/assets/icons/heroku.png"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>Bootstrap</em>
-                    <img
-                      width="130px"
-                      height="auto"
-                      src="https://theicom.org/wp-content/uploads/2016/03/bootstrap-logo.jpg"
-                    />
-                  </li>
                 </div>
                 <div className="column">
                   <li
@@ -182,47 +112,14 @@ export default class Resume extends Component {
                       justifyContent: "space-between",
                     }}
                   >
-                    <em>Flask</em>
+                    <em>AWS</em>
                     <img
-                      width="80px"
-                      height="auto"
-                      src="https://flask-training-courses.uk/images/flask-logo.png"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>MongoDB</em>
-                    <img
-                      width="145px"
-                      height="auto"
-                      src="https://infinapps.com/wp-content/uploads/2018/10/mongodb-logo.png"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>App Engine</em>
-                    <img
-                      alt=""
                       width="150px"
-                      style={{
-                        marginBottom: "3vh",
-                        top: "2vh",
-                        position: "relative",
-                      }}
                       height="auto"
-                      src="https://miro.medium.com/max/498/1*VHYGqjhONSJ20pRlIUbg7w.png"
+                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png"
                     />
                   </li>
+
                   <li
                     style={{
                       display: "flex",
@@ -238,6 +135,8 @@ export default class Resume extends Component {
                       src="https://git-scm.com/images/logos/downloads/Git-Icon-Black.png"
                     />
                   </li>
+                </div>
+                <div className="column" style={{ float: "left" }}>
                   <li
                     style={{
                       display: "flex",
@@ -245,16 +144,13 @@ export default class Resume extends Component {
                       justifyContent: "space-between",
                     }}
                   >
-                    <em>Stripe</em>
+                    <em>Java</em>
                     <img
-                      alt=""
-                      width="140px"
+                      width="80px"
                       height="auto"
-                      src="https://www.techcentral.ie/wp-content/uploads/2015/01/Stripe_logo.jpg"
+                      src="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/800px-Java_programming_language_logo.svg.png"
                     />
                   </li>
-                </div>
-                <div className="column" style={{ float: "left" }}>
                   <li
                     style={{
                       display: "flex",
@@ -268,73 +164,6 @@ export default class Resume extends Component {
                       width="100px"
                       height="auto"
                       src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Postgresql_elephant.svg/1200px-Postgresql_elephant.svg.png"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>Google Play Console</em>
-                    <img
-                      alt=""
-                      width="100px"
-                      height="auto"
-                      style={{
-                        marginBottom: "3.3vw",
-                        top: "3vh",
-                        position: "relative",
-                      }}
-                      src="https://services.google.com/fh/files/emails/top_console.png"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>Firebase</em>
-                    <img
-                      alt=""
-                      width="90px"
-                      height="auto"
-                      src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-vertical.png"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                    }}
-                  >
-                    <em>Expo</em>
-                    <img
-                      alt=""
-                      width="140px"
-                      height="auto"
-                      style={{ marginBottom: "5vh" }}
-                      src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/129218011/original/4a82d51c58af9a120ce8ee00ee9d26fa1ffd197b/create-react-native-app-with-expo-on-ios-and-android.jpg"
-                    />
-                  </li>
-                  <li
-                    style={{
-                      display: "flex",
-                      flexDirection: "row",
-                      justifyContent: "space-between",
-                      width: "300px",
-                    }}
-                  >
-                    <em>Foundation</em>
-                    <img
-                      alt=""
-                      width="140px"
-                      height="auto"
-                      src="https://www.coffeecup.com/images/software/icons/foundation-framer_2.5_win_en.png"
                     />
                   </li>
                 </div>

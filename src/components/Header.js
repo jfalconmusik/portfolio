@@ -19,8 +19,8 @@ export default class Header extends Component {
                 </a>
               </li>
               <li>
-                <a className="smoothscroll" href="#projects">
-                  Projects
+                <a className="smoothscroll" href="#experience">
+                  Experience
                 </a>
               </li>
               <li>
@@ -31,11 +31,6 @@ export default class Header extends Component {
               <li>
                 <a className="smoothscroll" href="#resume">
                   Resume
-                </a>
-              </li>
-              <li>
-                <a className="smoothscroll" href="#testimonials">
-                  Testimonials
                 </a>
               </li>
               <li>
@@ -67,43 +62,35 @@ export default class Header extends Component {
                   fontSize: "large",
                 }}
               >
-                Full Stack App Dev - React Native - MERN Stack - Python & SQL .
-                Check out my Android Apps
+                {"Passionate Software Engineer with Years of Experience"}
+                <br></br>
+                <br></br>
                 <a
-                  className="largifier"
-                  href="https://play.google.com/store/apps/details?id=com.binarytreevisualizer"
+                  className="largifier hoverer"
+                  href="https://capitaltg.com"
                   style={{
                     fontSize: "larger",
                     color: "#e36600",
                     fontWeight: "bold",
                   }}
                 >
-                  {" Binary Tree Visualizer"}
-                </a>
-                ,
+                  {" Capital Technology Group"}
+                </a>{" "}
+                - Federal Contract Software Development
+                <br></br>
+                <br></br>
                 <a
-                  href="https://play.google.com/store/apps/details?id=com.hackmypassword"
-                  style={{
-                    fontSize: "larger",
-                    color: "#e36600",
-                    fontWeight: "bold",
-                  }}
-                  className="largifier"
-                >
-                  {" Hack My Password"}
-                </a>
-                , and my clothing website,
-                <a
-                  className="largifier"
-                  href="https://jivasoriginals.com"
+                  className="largifier hoverer"
+                  href="https://bundlefi.com"
                   style={{
                     fontSize: "larger",
                     color: "#e36600",
                     fontWeight: "bold",
                   }}
                 >
-                  {" Jiva's Originals."}
-                </a>
+                  {" Bundlefi"}
+                </a>{" "}
+                - Fast-paced Fintech Startup
               </p>
               <hr />
               <ul className="social">
@@ -121,7 +108,7 @@ export default class Header extends Component {
             </div>
           </div>
           <p className="scrolldown">
-            <a className="smoothscroll" href="#about">
+            <a className="smoothscroll" href="#experience">
               <i className="icon-down-circle"> </i>
             </a>
           </p>

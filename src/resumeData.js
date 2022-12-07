@@ -29,25 +29,26 @@ let resumeData = {
   website: "https://github.com/jfalconmusik",
   education: [
     {
-      UniversityName: "General Assembly",
-      specialization: "Software Engineering Immersive",
-      MonthOfPassing: "Dec",
-      YearOfPassing: "2020",
-      Achievements: "Introduced Hooks to the Team",
+      UniversityName: "Regis University",
+      specialization: "Computer Science",
+      MonthOfPassing: "",
+      YearOfPassing: "",
+      Achievements: "",
     },
   ],
   work: [
     {
-      CompanyName: "Self-Employed",
-      specialization: "React Native Developer",
+      CompanyName: "JK Collection",
+      specialization: "Web Developer",
       MonthOfLeaving: "Present",
-      Achievements: "Password Decryption Android App",
+      Achievements: "Private Chef Booking Platform for Special Events",
     },
     {
       CompanyName: "Jiva's Originals",
       specialization: "Web Developer",
-      MonthOfLeaving: "Present",
-      Achievements: "Designed and Integrated Full Stack eCommerce store.",
+      MonthOfLeaving: "Dec 2020",
+      Achievements:
+        "Online storefront for Historical & Reenactment Clothing Company.",
     },
   ],
   skillsDescription: "",
@@ -55,6 +56,14 @@ let resumeData = {
     {
       skillname: "React / Native",
       img: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1200px-React-icon.svg.png",
+    },
+    {
+      skillname: "AWS",
+      img: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/512px-Amazon_Web_Services_Logo.svg.png",
+    },
+    {
+      skillname: "Java",
+      img: "https://en.wikipedia.org/wiki/Java_(programming_language)#/media/File:Java_programming_language_logo.svg",
     },
     {
       skillname: "Node",
