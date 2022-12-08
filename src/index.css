@@ -40,13 +40,25 @@ code {
 }
 
 .float-img {
-  object-fit: cover;
-  object-position: 30% 30%;
-  zoom: -50%;
-  width: 600px;
-  height: 780px;
+  /* object-fit: cover;
+  object-position: 30% 30%; */
+  /* zoom: -50%; */
+  width: 450px;
+  height: auto;
   position: relative;
   margin: 0 auto;
+  image-rendering: crisp-edges;
+}
+
+.small-img {
+  /* object-fit: cover;
+  object-position: 30% 30%; */
+  /* zoom: -50%; */
+  width: 20em;
+  height: 20em;
+  position: relative;
+  margin: 0 auto;
+  image-rendering: crisp-edges;
 }
 
 .left {
@@ -84,6 +96,11 @@ code {
   left: 0vw;
 }
 
+.slideLeftEnd2 {
+  opacity: 1;
+  left: -20vw;
+}
+
 @keyframes slideLeft {
   to {
     left: 0vw;
@@ -118,6 +135,14 @@ code {
   opacity: 0;
 }
 
+.txt2 {
+  opacity: 0;
+  overflow-wrap: normal;
+  margin: 0 auto;
+  position: relative;
+  max-width: 85vw;
+}
+
 .col {
   flex-direction: row;
   display: flex;
@@ -129,6 +154,15 @@ code {
   line-height: 2.1;
   font-size: larger;
   margin: 200px;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+.block2 {
+  inline-size: 450px;
+  line-height: 2.1;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: larger;
   text-align: center;
   overflow-wrap: break-word;
 }
@@ -152,6 +186,11 @@ code {
 .slideRightEnd {
   opacity: 1;
   right: 0vw;
+}
+
+.slideRightEnd2 {
+  opacity: 1;
+  right: -60vw;
 }
 
 @keyframes slideRight {
@@ -242,4 +281,23 @@ code {
   from {
     text-shadow: none;
   }
+}
+
+.skillBox {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow-wrap: normal;
+  flex-wrap: wrap;
+  width: 75%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+li {
+  margin: 0 auto;
+  position: relative;
 }
