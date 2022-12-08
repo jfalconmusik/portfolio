@@ -17,14 +17,16 @@ export default class About extends Component {
             <h2>About Me</h2>
             <p>
               Passionate specialist in Full Stack Software Engineering. Through
-              Capital Technology Group, I've written software under contract
-              with the Department of Homeland Security for the past year. While
-              the exact nature of my work is confidential per my nondisclosure
-              agreement, I've been involved on every part of our tech stack;
-              Java Springboot, React, PostgreSQL, Jenkins, AWS, Git.
+              <a href="https://capitaltg.com"> Capital Technology Group</a>,
+              I've written software under contract with the Department of
+              Homeland Security for the past year. While the exact nature of my
+              work is confidential per my nondisclosure agreement, I've been
+              involved on every part of our tech stack; Java Springboot, React,
+              PostgreSQL, Jenkins, AWS, Git.
               <br></br>
               <br></br>
-              Before that, I wrote code for Bundlefi, an excellent Fintech
+              Before that, I wrote code for{" "}
+              <a href="https://bundlefi.com">Bundlefi</a>, an excellent Fintech
               startup based in the NYC area. There, I learned how to thrive in
               the fast-paced world of startups, and how to work with a team of
               both technical and non-technical peers.
@@ -36,7 +38,8 @@ export default class About extends Component {
               <br></br>
               Fueled by the drive and motivation of a self-taught programmer,
               with years of on-the-job experience as well as a rigorous CS
-              education from the Regis University.
+              education from{" "}
+              <a href="https://www.regis.edu/">Regis University</a>.
             </p>
 
             <div className="row">

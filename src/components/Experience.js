@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AliceCarousel from "react-alice-carousel";
 
 import {
@@ -36,6 +36,17 @@ export default function Experience() {
   });
   const isBigScreen = useMediaQuery({ query: "(min-device-width: 1824px)" });
 
+  // animation code:
+
+  const ctgRef = useRef();
+  const onScreenCtg = useOnScreen(ctgRef, "-0px");
+
+  const bdfRef = useRef();
+  const onScreenBdf = useOnScreen(bdfRef, "-0px");
+
+  const freelanceRef = useRef();
+  const onScreenFreelance = useOnScreen(freelanceRef, "-0px");
+
   useEffect(() => {
     // if (isPortrait) {
     //   setIsSmallScreen(true);
@@ -66,6 +77,92 @@ export default function Experience() {
       }
     }
   }
+
+  function useOnScreen(ref, rootMargin = "0px") {
+    // State and setter for storing whether element is visible
+    const [isIntersecting, setIntersecting] = useState(false);
+    useEffect(() => {
+      const observer = new IntersectionObserver(
+        ([entry]) => {
+          // Update our state when observer callback fires
+          setIntersecting(entry.isIntersecting);
+        },
+        {
+          rootMargin,
+        }
+      );
+      if (ref.current) {
+        observer.observe(ref.current);
+      }
+      return () => {
+        observer.unobserve(ref.current);
+      };
+    }, []); // Empty array ensures that effect is only run on mount and unmount
+
+    return isIntersecting;
+  }
+
+  useEffect(() => {
+    const ctg = document.getElementById("ctg");
+    const ctgText = document.getElementById("ctgText");
+    if (ctg) {
+      if (onScreenCtg) {
+        ctg.classList.add("slideLeft");
+        setTimeout(() => {
+          ctgText.classList.add("fadeIn");
+        }, 4000);
+        setTimeout(() => {
+          ctgText.classList.add("opaque");
+        }, 5500);
+      } else {
+        // setTimeout(() => {
+        //   ctg.classList.remove("slideLeft");
+        // }, 1000);
+      }
+    }
+  }, [onScreenCtg]);
+
+  useEffect(() => {
+    const bdf = document.getElementById("bdf");
+    const bdfText = document.getElementById("bdfText");
+    if (bdf) {
+      if (onScreenBdf) {
+        bdf.classList.add("slideRight");
+        setTimeout(() => {
+          bdfText.classList.add("fadeIn");
+        }, 4000);
+        setTimeout(() => {
+          bdfText.classList.add("opaque");
+        }, 5500);
+      } else {
+        // setTimeout(() => {
+        //   console.log("bdf classlist: ", bdf.className);
+        //   bdf.classList.remove("slideRight");
+        // }, 1000);
+      }
+    }
+  }, [onScreenBdf]);
+
+  useEffect(() => {
+    const freelance = document.getElementById("freelance");
+    const freelanceText = document.getElementById("freelanceText");
+    if (freelance) {
+      if (onScreenFreelance) {
+        freelance.classList.add("slideLeft");
+        setTimeout(() => {
+          freelanceText.classList.add("fadeIn");
+        }, 4000);
+
+        setTimeout(() => {
+          freelanceText.classList.add("opaque");
+        }, 5500);
+      } else {
+        // setTimeout(() => {
+        //   freelance.classList.remove("slideLeft");
+        // }, 1000);
+      }
+    }
+  }, [onScreenFreelance]);
 
   useEffect(() => {
     if (window.innerWidth < 800) {
@@ -122,9 +219,62 @@ export default function Experience() {
             justifyContent: "center",
             position: "relative",
           }}
-          // className="ten columns"
         >
-          <Accordion allowZeroExpanded={true}>
+          <div ref={ctgRef} className="exp slideLeftEnd col" id="ctg">
+            <p id="ctgText" className="txt block">
+              {" "}
+              With <a href="https://capitaltg.com">
+                Capital Technology Group
+              </a>{" "}
+              I developed web applications as a federal contractor. I worked
+              with every aspect of our tech stack and coordinated with a large
+              scrum team. My work with them is protected by an NDA, but it was
+              with CTG that I went from a Developer to an Engineer.
+              <br></br>
+              <br></br>
+              March 2022 - Present
+            </p>
+            <img
+              className="float-img img"
+              src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/project-images%2Fctg.png?alt=media&token=484db0f7-e485-4a79-80c0-1fa38c9823d4"
+            />
+          </div>
+          <div ref={bdfRef} className="exp slideRightEnd col" id="bdf">
+            <img
+              className="float-img img"
+              src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/project-images%2Fbundlefi.png?alt=media&token=6058f989-23f1-4df5-9cf7-e3912f48800e"
+            />{" "}
+            <p id="bdfText" className="txt block">
+              {" "}
+              <a href="https://bundlefi.com">Bundlefi</a> is a Fintech startup
+              committed to providing the fastest and easiest way to find a local
+              bank or credit union. Bundlefi was a fast-paced work environment,
+              where I experienced first-hand the executive decision-making
+              necessary for startups to flourish.
+              <br></br>
+              <br></br>
+              December 2021 - February 2022
+            </p>
+          </div>
+          <div
+            ref={freelanceRef}
+            className="exp slideLeftEnd col"
+            id="freelance"
+          >
+            <p id="freelanceText" className="txt block">
+              {" "}
+              As a freelancer I wrote web applications for both the online
+              clothing store{" "}
+              <a href="https://jivasoriginals.com">Jiva's Originals</a>, as well
+              as the private chef booking platform,{" "}
+              <a href="https://jkchefcollection.com">JK Chef Collection</a>.
+            </p>
+            <img
+              className="float-img img"
+              src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/project-images%2Fjk-collection-landing.jpg?alt=media&token=4cb8ae6d-1404-4fce-8bb4-673b65d3ac60"
+            />
+          </div>
+          {/* <Accordion allowZeroExpanded={true}>
             <AccordionItem>
               <AccordionItemHeading>
                 <AccordionItemButton id="ctg">
@@ -490,15 +640,15 @@ export default function Experience() {
                 </>
               </AccordionItemPanel>
             </AccordionItem>
-          </Accordion>
+          </Accordion> */}
         </div>
       </div>
 
-      <div className="row">
+      {/* <div className="row">
         <aside className="eigth columns footer-widgets">
           <div className="widget"></div>
         </aside>
-      </div>
+      </div> */}
     </section>
   );
 }
