@@ -315,14 +315,14 @@ export default function Experience() {
                 <img
                   className="float-img img"
                   // src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/project-images%2Fctg.png?alt=media&token=484db0f7-e485-4a79-80c0-1fa38c9823d4"
-                  src="https://media-exp1.licdn.com/dms/image/C4E0BAQFN-NcsuLZFYw/company-logo_200_200/0/1615241073106?e=1678320000&v=beta&t=NrX8W_3r5qd8Ht11FdrYAyZnSLhheBb3VcLkaFt_y0Q"
+                  src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/logos%2Flogo_ctg.svg?alt=media&token=9115e49c-2021-4a86-8c06-a2060528f57a"
                 />
               </div>
               <div ref={bdfRef} className="exp slideRightEnd col" id="bdf">
                 <img
                   className="float-img img"
                   style={{ imageRendering: "crisp-edges" }}
-                  src="https://media-exp1.licdn.com/dms/image/C4E0BAQE66cY4ly9v7g/company-logo_200_200/0/1519877817500?e=1678320000&v=beta&t=MO6CnM03oxybSNBwlUBhWAPLeTS6uiM21TXXd0kOPNI"
+                  src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/logos%2Flogo_bdf.jpg?alt=media&token=a67c6cb2-32f6-40a3-929a-21f81f4065d5"
                 />{" "}
                 <p id="bdfText" className="txt block">
                   {" "}
@@ -345,14 +345,14 @@ export default function Experience() {
                   {" "}
                   As a freelancer I wrote web applications for both the online
                   clothing store{" "}
-                  <a href="https://jivasoriginals.com">Jiva's Originals</a>, as
+                  <a href="https://jiva-co.web.app/">Jiva's Originals</a>, as
                   well as the private chef booking platform,{" "}
                   <a href="https://jkchefcollection.com">JK Chef Collection</a>.
                 </p>
                 <img
                   className="float-img img"
                   // src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/project-images%2Fjk-collection-landing.jpg?alt=media&token=4cb8ae6d-1404-4fce-8bb4-673b65d3ac60"
-                  src="https://www.jkcollection.com/wp-content/uploads/2017/12/jk-chef-collection-small-logo-1.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/logos%2Fjk_logo.jpg?alt=media&token=70a04eb2-46b4-4405-90d4-cd534060e281"
                 />
               </div>
             </div>
@@ -376,7 +376,7 @@ export default function Experience() {
                   style={{ margin: "0 auto" }}
                   className="small-img img"
                   // src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/project-images%2Fctg.png?alt=media&token=484db0f7-e485-4a79-80c0-1fa38c9823d4"
-                  src="https://media-exp1.licdn.com/dms/image/C4E0BAQFN-NcsuLZFYw/company-logo_200_200/0/1615241073106?e=1678320000&v=beta&t=NrX8W_3r5qd8Ht11FdrYAyZnSLhheBb3VcLkaFt_y0Q"
+                  src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/logos%2Flogo_ctg.svg?alt=media&token=9115e49c-2021-4a86-8c06-a2060528f57a"
                 />
               </div>
               <p id="ctgText2" className="txt2 block2">
@@ -395,7 +395,7 @@ export default function Experience() {
                 <img
                   style={{ margin: "0 auto", imageRendering: "crisp-edges" }}
                   className="small-img img"
-                  src="https://media-exp1.licdn.com/dms/image/C4E0BAQE66cY4ly9v7g/company-logo_200_200/0/1519877817500?e=1678320000&v=beta&t=MO6CnM03oxybSNBwlUBhWAPLeTS6uiM21TXXd0kOPNI"
+                  src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/logos%2Flogo_bdf.jpg?alt=media&token=a67c6cb2-32f6-40a3-929a-21f81f4065d5"
                 />{" "}
                 <p id="bdfText2" className="txt2 block2">
                   {" "}
@@ -414,13 +414,13 @@ export default function Experience() {
                   style={{ margin: "0 auto" }}
                   className="small-img img"
                   // src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/project-images%2Fjk-collection-landing.jpg?alt=media&token=4cb8ae6d-1404-4fce-8bb4-673b65d3ac60"
-                  src="https://www.jkcollection.com/wp-content/uploads/2017/12/jk-chef-collection-small-logo-1.png"
+                  src="https://firebasestorage.googleapis.com/v0/b/jfalconmusik.appspot.com/o/logos%2Fjk_logo.jpg?alt=media&token=70a04eb2-46b4-4405-90d4-cd534060e281"
                 />
                 <p id="freelanceText2" className="txt2 block2">
                   {" "}
                   As a freelancer I wrote web applications for both the online
                   clothing store{" "}
-                  <a href="https://jivasoriginals.com">Jiva's Originals</a>, as
+                  <a href="https://jiva-co.web.app/">Jiva's Originals</a>, as
                   well as the private chef booking platform,{" "}
                   <a href="https://jkchefcollection.com">JK Chef Collection</a>.
                 </p>
